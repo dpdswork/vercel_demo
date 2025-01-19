@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # Load the student marks from the marks.json file
 def load_marks():
-    with open('marks.json', 'r') as f:
+    with open('q-vercel-python.json', 'r') as f:
         return json.load(f)
 
 @app.route("/api", methods=["GET"])
